@@ -22,7 +22,7 @@ var alertExist = document.getElementById("alertExist");
 // Regex patterns
 var emailRegx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 var passwordRegx = /^(?=.*[a-zA-Z])(?=.*[0-9]).{8,}$/;
-var nameRegx = /^[a-zA-Z]{3,}$/;
+var nameRegx = /^[a-zA-Z ]{3,}$/;
 
 // Users array
 var users;

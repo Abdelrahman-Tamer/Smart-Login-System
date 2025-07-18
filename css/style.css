@@ -1,3 +1,4 @@
+/* Main background */
 .bg-main {
     background: linear-gradient(-135deg, #bdbaba 0%, #83878e 40%, #6b6e74 70%, #0009 100%) !important;
     background-size: cover !important;
@@ -5,10 +6,12 @@
     height: 100vh !important;
 }
 
+/* Heading style */
 h1 {
     color: #fff !important;
 }
 
+/* Custom container */
 .custom {
     width: 50% !important;
     background-color: rgba(255, 255, 255, 0.2) !important;
@@ -16,24 +19,27 @@ h1 {
     border-radius: 1.5rem !important;
 }
 
+/* Dark button style */
 .btn.btn-dark {
     border-radius: 1.5rem !important;
     padding: 0.5rem !important;
     font-size: 1rem !important;
 }
 
-
+/* Input style */
 input {
     border-radius: 1.5rem !important;
     padding: 0.75rem !important;
 }
 
+/* Input placeholder style */
 input::placeholder {
     color: #D0D0D0 !important;
     font-weight: 500 !important;
     font-size: 1rem !important;
 }
 
+/* Input focus style */
 input:focus {
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
     box-shadow: 0 0 0 0.25rem rgba(61, 61, 61, 0.30) !important;
@@ -41,14 +47,17 @@ input:focus {
     outline: none !important;
 }
 
+/* Anchor style */
 a {
     color: #fff !important;
 }
 
+/* Anchor hover style */
 a:hover {
     color: #000000b1 !important;
 }
 
+/* Eye icon style */
 .fa-eye-slash,
 .fa-eye {
     top: 51%;
@@ -57,6 +66,52 @@ a:hover {
     cursor: pointer;
 }
 
+/* Success login alert */
+#successLogin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 0.75rem !important;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Alerts and success messages */
+#alertSignUp,
+#alertLogin,
+#successLogin,
+#alertLoginFill,
+#successSignUp,
+#alertExist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 0.75rem !important;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hidden class for transitions */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Responsive styles */
 @media screen and (max-width: 1399px) {
     .custom {
         width: 60% !important;
@@ -96,13 +151,16 @@ a:hover {
         padding: 0.75rem !important;
         border-radius: 1rem !important;
     }
+
     .custom h1 {
         font-size: 1.5rem !important;
     }
+
     .btn.btn-dark {
         font-size: 0.95rem !important;
         padding: 0.4rem !important;
     }
+
     input {
         font-size: 0.95rem !important;
         padding: 0.5rem !important;
